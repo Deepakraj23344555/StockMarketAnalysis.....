@@ -1,6 +1,6 @@
-import streamlit as st
 import pandas as pd
 import plotly.graph_objects as go
+import streamlit as st  # ✅ This line fixes the NameError
 
 def calculate_payoff(strategy, price_range, strike, premium, lot_size):
     df = pd.DataFrame({'Stock Price': price_range})
